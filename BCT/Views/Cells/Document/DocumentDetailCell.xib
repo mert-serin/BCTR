@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="DocumentDetailCell" customModule="BCT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-ls-sAN" customClass="DocumentDetailView" customModule="BCT" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Bvl-ls-sAN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DP2-XG-LYv"/>
+                <constraint firstItem="Bvl-ls-sAN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Sup-kZ-pQI"/>
+                <constraint firstAttribute="bottom" secondItem="Bvl-ls-sAN" secondAttribute="bottom" id="ZVh-Kl-8vF"/>
+                <constraint firstAttribute="trailing" secondItem="Bvl-ls-sAN" secondAttribute="trailing" id="nGB-UP-ZDn"/>
+            </constraints>
+            <connections>
+                <outlet property="documentDetailView" destination="Bvl-ls-sAN" id="89C-9F-TRM"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="130.58035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

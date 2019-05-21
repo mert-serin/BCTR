@@ -1,0 +1,20 @@
+PODS:
+  - KVNProgress (2.3.5)
+  - stellar-ios-mac-sdk (1.5.7)
+
+DEPENDENCIES:
+  - KVNProgress
+  - stellar-ios-mac-sdk
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KVNProgress
+    - stellar-ios-mac-sdk
+
+SPEC CHECKSUMS:
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  stellar-ios-mac-sdk: 7a49cbb604d6ec8e0e3fefddf34d0d9340db2f1c
+
+PODFILE CHECKSUM: 2498ba85365b334eb4978a0edda494d222377a0b
+
+COCOAPODS: 1.5.3

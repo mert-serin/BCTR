@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var user:LoginDataModel?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let savedPerson = UserDefaults.standard.object(forKey: "User") as? Data {
+            let decoder = JSONDecoder()
+            if let loadedPerson = try? decoder.decode(LoginDataModel.self, from: savedPerson) {
+                self.user = loadedPerson
+                let storyboard = UIStoryboard(name: "Home", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "HomeTabBarViewController")
+                window?.rootViewController = controller
+            }
+        }
+        
         return true
     }
 
